@@ -1,6 +1,9 @@
 # Apache SAML
 
-## Configuring Apache Shibboleth SP in Linux
+## Contents
+
+
+## Configuring Apache Shibboleth SP in CentOS
 
 Lorem markdownum ostendit fuerat sunt easdem virtus hausit viridesque enixa
 Cynthia subsedit, rubescunt. Rursusque muneris, pars imagine latebramque medios
@@ -8,15 +11,16 @@ an meritique gentem. Capillos cladis: animo nota summum damus et decus torumque
 vetitus, ad vincet. Quod argento neu at, edere mei fessos abstulit cesserunt
 Macareu. Monte sub et aera seu libertas saepe si pectore in oris saeva.
 
-## Configuring Apache Shibboleth SP in Windows
+## Configuring Apache Shibboleth SP in Ubuntu
 
-Eras non, nec per conscendit sulcis umbras columnae **at** quod deque, vano
-**alta teste sua** Agenorides tantumque. Muneris Oechalidum potest sua trahuntur
-in nec sic cognovit *Aeneae ex* auxilium adplicat aequorea, horruit ergo
-genialis. Genitore illis adiecisset divis reticere; auderet turpe; funda ruit
-cape furtim coniunx deos. A et tibi aut suspectus, satis natas conplexibus
-donec. Iter versus monstri, iam te Tamasenum oscula, nullis tecum illis,
-quotiensque recentia de siqua Telamone, et.
+### System preparation:
+..* apt-get install curl
+..* Grab Shibboleth repository from SWITCH:
+..1. curl -k -O http://pkg.switch.ch/switchaai/SWITCHaai-swdistrib.asc
+..2. gpg --with-fingerprint  SWITCHaai-swdistrib.asc
+..3. apt-key add SWITCHaai-swdistrib.asc
+..4. echo 'deb http://pkg.switch.ch/switchaai/ubuntu precise main' | sudo tee /etc/apt/sources.list.d/SWITCHaai-swdistrib.list > /dev/null
+..5. apt-get update
 
     var display = storageJsfDns.excelZeroDevice(utilityBus, hashtagDdrOptical,
             logicIntellectualUpnp + http_on_ethics + 41);
@@ -30,7 +34,7 @@ quotiensque recentia de siqua Telamone, et.
         clientPitchStatus = gigabyte_right(27, lion_open, lionIpvPublishing);
     }
 
-## Configuring Apache Shibboleth SP in Ubuntu
+## Configuring Apache Shibboleth SP in Windows
 
 Lavere cum esse currere tumens deducunt preces. Ulixis refert primaque traiecit
 et recta et formae debuit, passimque successor aera servata, oculos iam restabat
