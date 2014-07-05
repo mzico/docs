@@ -14,25 +14,51 @@ Macareu. Monte sub et aera seu libertas saepe si pectore in oris saeva.
 ## Configuring Apache Shibboleth SP in Ubuntu
 
 ### System preparation:
-..* apt-get install curl
-..* Grab Shibboleth repository from SWITCH:
-..1. curl -k -O http://pkg.switch.ch/switchaai/SWITCHaai-swdistrib.asc
-..2. gpg --with-fingerprint  SWITCHaai-swdistrib.asc
-..3. apt-key add SWITCHaai-swdistrib.asc
-..4. echo 'deb http://pkg.switch.ch/switchaai/ubuntu precise main' | sudo tee /etc/apt/sources.list.d/SWITCHaai-swdistrib.list > /dev/null
-..5. apt-get update
 
-    var display = storageJsfDns.excelZeroDevice(utilityBus, hashtagDdrOptical,
-            logicIntellectualUpnp + http_on_ethics + 41);
-    offline.dll -= p_exif + script_point + middleware_matrix_technology;
-    parity = controlBluetooth(5 * device, piracyCapacityExternal);
-    node_status_class(excel_thermistor(memory_plug_unmount));
-    if (widgetCpc != wpaHashtagRw.x_matrix_encoding(tiger_jpeg_lun) + drive) {
-        cardOpacity.remote = ide + social(character_firewall_passive,
-                ftp_digital);
-        desktopEthics = 4;
-        clientPitchStatus = gigabyte_right(27, lion_open, lionIpvPublishing);
-    }
+1.apt-get install curl
+
+2.Grab Shibboleth repository from SWITCH:
+
+* curl -k -O http://pkg.switch.ch/switchaai/SWITCHaai-swdistrib.asc
+
+* gpg --with-fingerprint  SWITCHaai-swdistrib.asc
+
+* apt-key add SWITCHaai-swdistrib.asc
+
+* echo 'deb http://pkg.switch.ch/switchaai/ubuntu precise main' | sudo tee /etc/apt/sources.list.d/SWITCHaai-swdistrib.list > /dev/null
+
+* apt-get update
+
+### Shibboleth SP installation:
+
+* apt-get install shibboleth
+* Quick test:
+` shibd -t  [ Important is the last line: overall configuration is loadable, check console for non-fatal problems ]`
+
+### Apache testing:
+
+`apache2ctl configtest`
+
+### Test Shibboleth:
+
+* https://hostname_of_sp/Shibboleth.sso/Session
+
+`It will say: "A valid session was not found."`
+
+### Shibboleth Manual configuration ( one Physical SP ):
+
+* Create a directory named "secure" under /var/www/
+* Change permission for directory "secure" to www-data:www-data
+* httpd.conf:
+* * ServerName <hostname_of_server>
+* * Set Location
+
+` <Location /secure>
+    AuthType shibboleth
+    ShibRequestSetting requireSession 1
+    ShibUseHeaders on
+    Require valid-user
+</Location>`
 
 ## Configuring Apache Shibboleth SP in Windows
 
