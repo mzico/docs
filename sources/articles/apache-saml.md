@@ -1,6 +1,6 @@
-# SAML testing
+# Apache SAML
 
-## Apache SAML testing - 2
+## Configuring Apache Shibboleth SP in Linux
 
 Lorem markdownum ostendit fuerat sunt easdem virtus hausit viridesque enixa
 Cynthia subsedit, rubescunt. Rursusque muneris, pars imagine latebramque medios
@@ -8,7 +8,7 @@ an meritique gentem. Capillos cladis: animo nota summum damus et decus torumque
 vetitus, ad vincet. Quod argento neu at, edere mei fessos abstulit cesserunt
 Macareu. Monte sub et aera seu libertas saepe si pectore in oris saeva.
 
-## Apache SAML testing-2
+## Configuring Apache Shibboleth SP in Windows
 
 Eras non, nec per conscendit sulcis umbras columnae **at** quod deque, vano
 **alta teste sua** Agenorides tantumque. Muneris Oechalidum potest sua trahuntur
@@ -30,7 +30,7 @@ quotiensque recentia de siqua Telamone, et.
         clientPitchStatus = gigabyte_right(27, lion_open, lionIpvPublishing);
     }
 
-## Unde mihi vitibus accepere
+## Configuring Apache Shibboleth SP in Ubuntu
 
 Lavere cum esse currere tumens deducunt preces. Ulixis refert primaque traiecit
 et recta et formae debuit, passimque successor aera servata, oculos iam restabat
